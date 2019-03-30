@@ -22,9 +22,9 @@ PHRASES = {
 
 # do they want to drill phrases first
 if len(sys.argv) == 2 and sys.argv[1] == 'english':
-    PHRASW_FIRST = True
+    PHRASE_FIRST = True
 else:
-    PHRASW_FIRST = False
+    PHRASE_FIRST = False
 
 # load up the words from the website
 for word in urlopen(WORD_URL).readlines():
